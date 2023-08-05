@@ -97,21 +97,25 @@ main {
 .active .zoom {
 	transform: translate3d(0, 0, -25rem);
 }
-/* Main content simulation */
 section {
 	width: 100%;
 	height: 100vh;
 	background-color: #1a1d24;
 }
-/* Main content simulation end*/
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 1000px){
 	.hamburger {
-		top: 1.5rem;
-		right: 1.5rem;
+		font-size: 80px;
 	}
-}
-@media screen and (max-width: 350px) {
 	.nav {
-		width: 25rem;
+		font-size: 40px;
+	}
+	.nav-item{
+		padding-top: 60px;
+	}
+	.nav-item .fas{
+		font-size: 40px;
+	}
+	.active .nav {
+		width: 500px;
 	}
 }
